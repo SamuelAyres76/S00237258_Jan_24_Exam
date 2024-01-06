@@ -25,12 +25,7 @@ namespace S00237258_Budget_Planner
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void GetData()
         {
 
         }
