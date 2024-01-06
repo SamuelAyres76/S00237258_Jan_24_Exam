@@ -25,6 +25,7 @@ namespace S00237258_Budget_Planner
             InitializeComponent();
         }
 
+        // Q1(f)
         private void GetData()
         {
             List<BudgetItem> budgetItems = new List<BudgetItem>();
@@ -49,8 +50,10 @@ namespace S00237258_Budget_Planner
             budgetItems.Add(b7);
 
             SortBudgetItemsByIncomeOrExpense(budgetItems);
+            getTotal(budgetItems);
         }
 
+        // Q1(g)
         private void SortBudgetItemsByIncomeOrExpense(List<BudgetItem> budgetItems)
         {
             // Sort the budget items list by income or an expense.
@@ -60,6 +63,41 @@ namespace S00237258_Budget_Planner
             // Add the new sorted budget items.
             lstbx_income.ItemsSource = incomeItems;
             lstbx_expenses.ItemsSource = expenseItems;
+        }
+
+        // Q1(h)
+        private void btn_add_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        // Q1(i)
+        private void btn_remove_Click(object sender, RoutedEventArgs e)
+        {
+            // Get the item from the listbox
+            BudgetItem selectedBudget = lstbx_income.SelectedItem as BudgetItem;
+
+            // Ensure an item is selected.
+            if (selectedBudget != null)
+            {
+                // Remove entry
+                lstbx_income.ItemsSource = null;
+            }
+        }
+
+        // Q1(j) (note: out of time, this adds expenses instead of subtracting them).
+        private void getTotal(List<BudgetItem> budgetItems)
+        {
+            double total = 0;
+
+            // Get all of the prices together
+            BudgetItem selectedBudget = lstbx_income.SelectedItem as BudgetItem;
+
+            // Add prices up
+            for (int i = 0; i < budgetItems.Count; i++) 
+            {
+                total = (total + budgetItems[i].Amount);
+            }
         }
     }
 }

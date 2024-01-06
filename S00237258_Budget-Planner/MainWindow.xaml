@@ -22,8 +22,8 @@
         <TextBlock x:Name="txt_blk_date" HorizontalAlignment="Left" Margin="540,149,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" Width="81" RenderTransformOrigin="0.494,0.253"/>
         <TextBlock x:Name="txt_blk_name_amount" HorizontalAlignment="Left" Margin="540,172,0,0" TextWrapping="Wrap" Text="Amount" VerticalAlignment="Top" Width="81"/>
 
-        <Button x:Name="btn_add" Content="Add" HorizontalAlignment="Left" Margin="673,284,0,0" VerticalAlignment="Top" Width="80"/>
-        <Button x:Name="btn_remove" Content="Remove" HorizontalAlignment="Left" Margin="540,284,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="btn_add" Content="Add" HorizontalAlignment="Left" Margin="673,284,0,0" VerticalAlignment="Top" Width="80" Click="btn_add_Click"/>
+        <Button x:Name="btn_remove" Content="Remove" HorizontalAlignment="Left" Margin="540,284,0,0" VerticalAlignment="Top" Width="80" Click="btn_remove_Click"/>
 
         <TextBlock x:Name="txt_blk_name_entry" HorizontalAlignment="Left" Margin="664,125,0,0" TextWrapping="Wrap" Text="enter name here" VerticalAlignment="Top" Width="109"/>
         <TextBlock x:Name="txt_blk_amount_entry" HorizontalAlignment="Left" Margin="664,172,0,0" TextWrapping="Wrap" Text="enter amount here" VerticalAlignment="Top" Width="109"/>
