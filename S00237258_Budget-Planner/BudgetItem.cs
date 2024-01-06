@@ -30,17 +30,18 @@ namespace S00237258_Budget_Planner
         // Recurring
         public bool Recurring { get; set; }
 
-        // Income or Expense
+        // Income or Expense (for sorting)
         public bool Income { get; set; }
 
         /* -------------------------------------------------------------------- */
 
-        public BudgetItem(DateTime date, string name, double amount, bool recurring)
+        public BudgetItem(DateTime date, string name, double amount, bool recurring, bool Income)
         {
             Date = date;
             Name = name;
             Amount = amount;
             Recurring = recurring;
+            Income = Income;
         }
 
         // Sorting by date

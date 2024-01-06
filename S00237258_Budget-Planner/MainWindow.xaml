@@ -33,7 +33,5 @@
         <RadioButton x:Name="r_btn_expense" Content="Expense" HorizontalAlignment="Left" Margin="664,217,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="btn_recurring" Content="Recurring" HorizontalAlignment="Left" Margin="540,251,0,0" VerticalAlignment="Top"/>
 
-
-
     </Grid>
 </Window>
