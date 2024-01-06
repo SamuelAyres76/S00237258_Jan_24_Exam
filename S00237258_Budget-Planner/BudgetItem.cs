@@ -8,6 +8,9 @@ namespace S00237258_Budget_Planner
 {
     internal class BudgetItem : IComparable<BudgetItem>
     {
+        // Properties
+        /* -------------------------------------------------------------------- */
+
         // Name
         public string Name { get; set; }
 
@@ -27,6 +30,10 @@ namespace S00237258_Budget_Planner
         // Recurring
         public bool Recurring { get; set; }
 
+        // Income or Expense
+        public bool Income { get; set; }
+
+        /* -------------------------------------------------------------------- */
 
         public BudgetItem(DateTime date, string name, double amount, bool recurring)
         {
